@@ -1,0 +1,22 @@
+{
+  "name": "SC_TestSuite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:local:chrome": "protractor src/conf/conf.js --params.env='local' --params.cap='chrome'"
+  },
+  "keywords": [],
+  "author": "Vivek Kurhe",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.3.1",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "^5.4.2",
+    "select-wrapper": "0.0.0"
+  },
+  "devDependencies": {
+    "protractor-element-extend": "^2.1.0"
+  }
+}
