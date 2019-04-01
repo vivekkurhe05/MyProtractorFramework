@@ -13,10 +13,10 @@
 10 verbose lifecycle SC_TestSuite@1.0.0~test:local:chrome: CWD: /home/vivek/Desktop/SC_TestSuite
 11 silly lifecycle SC_TestSuite@1.0.0~test:local:chrome: Args: [ '-c',
 11 silly lifecycle   'protractor src/conf/conf.js --params.env=\'local\' --params.cap=\'chrome\'' ]
-12 silly lifecycle SC_TestSuite@1.0.0~test:local:chrome: Returned: code: 1  signal: null
+12 silly lifecycle SC_TestSuite@1.0.0~test:local:chrome: Returned: code: 105  signal: null
 13 info lifecycle SC_TestSuite@1.0.0~test:local:chrome: Failed to exec test:local:chrome script
 14 verbose stack Error: SC_TestSuite@1.0.0 test:local:chrome: `protractor src/conf/conf.js --params.env='local' --params.cap='chrome'`
-14 verbose stack Exit status 1
+14 verbose stack Exit status 105
 14 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
 14 verbose stack     at emitTwo (events.js:126:13)
 14 verbose stack     at EventEmitter.emit (events.js:214:7)
@@ -33,7 +33,7 @@
 20 error npm  v3.5.2
 21 error code ELIFECYCLE
 22 error SC_TestSuite@1.0.0 test:local:chrome: `protractor src/conf/conf.js --params.env='local' --params.cap='chrome'`
-22 error Exit status 1
+22 error Exit status 105
 23 error Failed at the SC_TestSuite@1.0.0 test:local:chrome script 'protractor src/conf/conf.js --params.env='local' --params.cap='chrome''.
 23 error Make sure you have the latest version of node.js and npm installed.
 23 error If you do, this is most likely a problem with the SC_TestSuite package,

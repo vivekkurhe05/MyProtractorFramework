@@ -1,12 +1,12 @@
 'use strict'
 
-var loginPage = require('../page-objects/login_page.js');
-var genericClass = require('../helpers/generic');
-var using = require('jasmine-data-provider');
-var navbar = require('../page-objects/navbar_links');
-var homePage = require('../page-objects/home_page');
-var wait = require('../helpers/waits');
-var browsers = require('../helpers/browser');
+let loginPage = require('../page-objects/login_page.js');
+let genericClass = require('../helpers/generic');
+let using = require('jasmine-data-provider');
+let navbar = require('../page-objects/navbar_links');
+let homePage = require('../page-objects/home_page');
+let wait = require('../helpers/waits');
+let browsers = require('../helpers/browser');
 
 describe('Login sanity tests', () => {
 
@@ -40,13 +40,13 @@ describe('Login sanity tests', () => {
     it('Verify that the logout link is redirected to login page', () => {
         loginPage.login(browser.params.email, browser.params.password);
         navbar.goToLogoutPage();
-        var actualTitle = loginPage.getTitle(loginPage.loginPageTitle);
+        let actualTitle = loginPage.getTitle(loginPage.loginPageTitle);
         expect(actualTitle).toEqual('Sign In');
     });
 
     it('Verify that user is redirected to create an account page', async () => {
         genericClass.click(loginPage.createAccountLink);
-        var actualTitle = await loginPage.getTitle(loginPage.registrationPageTitle);
+        let actualTitle = await loginPage.getTitle(loginPage.registrationPageTitle);
         expect(actualTitle).toEqual('Create a new Account');
     });
     

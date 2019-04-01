@@ -26,6 +26,8 @@ var NavbarLinks = function(){
     }
 
     this.goToBusinessViabilityPage = function(){
+        wait.waitForElementVisibility(homePage.welcomeTitle);
+        wait.waitForElementVisibility(this.businessViability);
         this.businessViability.click();
     }
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:local:chrome": "protractor src/conf/conf.js --params.env='local' --params.cap='chrome'"
+    "test:local:chrome": "protractor src/conf/conf.js --params.env='local' --params.cap='chrome'",
+    "lint": "./node_modules/.bin/eslint --init"
   },
   "keywords": [],
   "author": "Vivek Kurhe",
@@ -14,9 +15,21 @@
     "jasmine": "^3.3.1",
     "jasmine-data-provider": "^2.2.0",
     "protractor": "^5.4.2",
+    "protractor-retry": "^1.2.6",
     "select-wrapper": "0.0.0"
   },
   "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jasmine": "^2.10.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-protractor": "^1.41.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "faker": "^4.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-beautiful-reporter": "^1.2.7",
     "protractor-element-extend": "^2.1.0"
   }
 }
